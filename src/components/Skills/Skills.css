@@ -1,0 +1,98 @@
+.skill-container {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.skill-container h5 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+
+.skills-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.skills {
+  flex: 1;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-info {
+  flex: 1;
+}
+
+@media (max-width: 1025px) {
+  .skills {
+    padding-left: 1rem;
+  }
+  .skills,
+  .skills-content {
+    grid-gap: 2rem;
+  }
+}
+
+.skill-container::after,
+.skill-container::before {
+  content: "";
+  width: 25.125rem;
+  height: 25.125rem;
+  background-color: #b6c4b6;
+  border-radius: 28.125rem;
+  position: absolute;
+  z-index: -999;
+  filter: blur(225px);
+}
+.skill-container::after {
+  top: -3rem;
+  left: -5rem;
+}
+.skill-container::before {
+  bottom: 0rem;
+  right: 0rem;
+}
+
+@media (max-width: 600px) {
+  .skill-container {
+    margin-top: 10rem;
+    margin: 2rem 0;
+  }
+
+  .skill-container h5 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-container::after,
+  .skill-container::before {
+    width: 15.125rem;
+    height: 15.125rem;
+  }
+
+  .skill-container::after {
+    top: -1.5rem;
+    left: -2.5rem;
+  }
+
+  .skill-container::before {
+    bottom: 0rem;
+    right: 0rem;
+  }
+  .skills-info {
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+}

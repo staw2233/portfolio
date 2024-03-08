@@ -1,0 +1,97 @@
+.skills-info-card {
+  min-height: 25rem;
+  border-radius: 0.65rem;
+  border: 2px solid #b6c4b6;
+  background-color: #667c66;
+  backdrop-filter: blur(1rem);
+  transition: height 1s ease-in-out;
+}
+
+.skills-info-card h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  background: rgb(255, 255, 255) 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1.5px solid #b6c4b6;
+}
+
+.skills-info-content {
+  padding: 2rem;
+}
+.skill-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-info p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skill-info .percentage {
+  color: #ffffff;
+}
+
+.skill-progress-bg {
+  width: 100%;
+  height: 0.5rem;
+  background: #919c91;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+.skill-progress {
+  width: 0%;
+  height: 0.5rem;
+  background: #2f442f;
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 700ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 700ms;
+}
+
+@media (max-width: 600px) {
+  .skills-info-card {
+    min-height: 20rem;
+  }
+
+  .skills-info-card h6 {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .skills-info-content {
+    padding: 1.5rem;
+  }
+
+  .skill-info p {
+    font-size: 0.8rem;
+  }
+
+  .skill-progress-bg {
+    height: 0.4rem;
+    margin: 0.8rem 0;
+  }
+
+  .skill-progress {
+    height: 0.4rem;
+  }
+}

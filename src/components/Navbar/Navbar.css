@@ -1,0 +1,212 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.nav-wrapper {
+  background: #304d30;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(20px);
+}
+
+.nav-content {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.logo {
+  width: 12rem;
+  height: auto;
+  order: 1;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.nav-content ul {
+  margin-left: -2rem;
+  order: 2;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  align-self: center;
+}
+
+.nav-content li {
+  display: flex;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu-item {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  animation: fadeUp 1s ease-out forwards;
+  position: relative;
+  overflow: hidden; /* Ensures the underline doesn't show initially outside this container */
+}
+
+.menu-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e86a33; /* Your choice of underline color */
+  transition: width 0.5s ease, transform 0.5s ease; /* Animate width and transform properties */
+  position: absolute;
+  bottom: -5px; /* Adjust as needed for the underline's position */
+  left: 0;
+  transform: translateY(5px); /* Start below the text */
+}
+
+.menu-item:hover::after {
+  height: 100%; /* Full width on hover */
+  transform: translateY(0px); /* Move to just below the text */
+}
+.menu-item::before {
+  content: "";
+  bottom: 0rem;
+  width: 100%;
+  height: 0;
+  background: #e86a33;
+  position: absolute;
+  transition: height 0.15s ease-in; /* Animujemy wysokość */
+}
+
+.menu-item:hover::before {
+  height: 0.12rem; /* Wysokość podkreślenia po najechaniu myszką */
+}
+.contact-btn {
+  animation: fadeUp 1s ease-out forwards;
+  color: #25614a;
+  order: 3;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(182, 196, 182, 1) 100%;
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: #304d30 solid 3px;
+}
+
+.contact-btn:hover {
+  color: #25614a;
+  background: black;
+  outline: 1.5px solid #25614a;
+}
+
+.menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: rgba(182, 196, 182, 1) 100%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: none;
+  line-height: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  color: #25614a;
+  background: rgba(182, 196, 182, 1) 100%;
+  border: 1px solid #25614a;
+}
+.menu-btn.open {
+  transform: rotate(180deg);
+}
+
+.menu-btn:active,
+.menu-btn:focus {
+  color: #fff;
+  background: rgba(182, 196, 182, 1) 100%;
+  border: none;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 769px) {
+  .menu-btn {
+    display: block;
+  }
+  .contact-btn {
+    display: none;
+  }
+
+  .nav-content ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1325px) {
+  .nav-wrapper {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .nav-content {
+    justify-content: space-between;
+  }
+
+  .logo {
+    order: 1; /* Logo po lewej stronie */
+  }
+
+  .menu-btn {
+    order: 2; /* Przycisk menu po prawej stronie */
+    display: block;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .nav-content ul {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .nav-wrapper {
+    width: 100%; /* Dodajemy tę linię */
+    padding: 0 2rem;
+  }
+  /* pozostałe style */
+}
