@@ -30,14 +30,11 @@ const Navbar = () => {
             <li onClick={() => scrollTo("projects")}>
               <a className="menu-item">Projects</a>
             </li>
-            <li>
+            <li onClick={() => scrollTo("contact")}>
               <a className="menu-item">Contact</a>
             </li>
           </ul>
-          <button
-            className="contact-btn"
-            onClick={() => console.log("Hire me button clicked")}
-          >
+          <button onClick={() => scrollTo("contact")} className="contact-btn">
             Contact now
           </button>
 

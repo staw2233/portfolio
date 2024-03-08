@@ -4,6 +4,8 @@ import Hero from "./components/Hero/Hero";
 import "./App.css";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -19,7 +21,11 @@ const App = () => {
         <div id="projects" className="component-spacing">
           <Projects />
         </div>
+        <div id="contact" className="component-spacing">
+          <Contact />
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

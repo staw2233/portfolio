@@ -11,7 +11,12 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
         onClick={toggleMenu}
       >
         <div className="mobile-menu-container">
-          <img className="logo" src="../images/logo.png" alt="logo" />
+          <img
+            onClick={() => scrollTo("hero")}
+            className="logo"
+            src="../images/logo.png"
+            alt="logo"
+          />
           <ul>
             <li onClick={() => scrollTo("hero")}>
               <a className="menu-item">Home</a>
@@ -22,10 +27,13 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
             <li onClick={() => scrollTo("projects")}>
               <a className="menu-item">Projects</a>
             </li>
-            <li>
+            <li onClick={() => scrollTo("contact")}>
               <a className="menu-item">Contact</a>
             </li>
-            <button className="contact-btn" onClick={() => {}}></button>
+            <button
+              className="contact-btn"
+              onClick={() => scrollTo("projects")}
+            ></button>
           </ul>
         </div>
       </div>

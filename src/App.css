@@ -1,11 +1,10 @@
 .container {
   max-width: 1300px !important;
   margin: 0 auto;
-  position: relative;
 }
 
 .component-spacing {
-  margin-bottom: 16rem; /* Zmień tę wartość, aby dostosować odstęp */
+  margin-bottom: 2rem; /* Zmień tę wartość, aby dostosować odstęp */
 }
 @media (max-width: 1300px) {
   .container {
