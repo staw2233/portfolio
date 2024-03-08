@@ -4,19 +4,18 @@
 }
 
 .contact-container h5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
   font-weight: 600;
 }
 
 .contact-container {
   display: flex;
-  gap: 3rem;
 }
 
 .contact-content {
   display: flex;
-  gap: 3rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: center;
   margin-left: 20rem;
