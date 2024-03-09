@@ -19,9 +19,9 @@ form input,
 form textarea {
   flex: 1;
   width: 100%;
-  font-size: 0.9rem;
-  color: #fff;
-  background: #304d30;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #2e4b2e;
   border-radius: 0.6rem;
   border: 1.5px solid #b6c4b6;
   padding: 1rem;
