@@ -116,7 +116,7 @@
 
 .contact-btn:hover {
   color: #25614a;
-  background: black;
+  background: transparent;
   outline: 1.5px solid #25614a;
 }
 
