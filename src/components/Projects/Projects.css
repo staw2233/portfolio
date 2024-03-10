@@ -42,26 +42,29 @@
 
 .info {
   font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #f2fff2;
+  text-align: center;
 }
 
 .carousel-enter {
-  transform: translateX(-100%);
+  transform: translateY(-100%);
 }
 
 .carousel-enter-active {
-  transform: translateX(0);
+  transform: translateY(0);
   transition: transform 300ms;
 }
 
 .carousel-exit {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .carousel-exit-active {
-  transform: translateX(100%);
+  transform: translateY(100%);
   transition: transform 300ms;
 }
-
 .slideGap1,
 .slideGap2,
 .slideGap3 {
@@ -137,8 +140,9 @@
   }
 
   .slick-slide img {
-    height: 210px;
-    width: 325px;
+    height: auto; /* Zmienia wysokość na auto, aby zachować proporcje obrazu */
+    width: 100%; /* Zmienia szerokość na 100%, aby obraz wypełniał całą szerokość slajdu */
+    object-fit: cover; /* Zapewnia, że obraz pokryje cały slajd, zachowując swoje proporcje */
   }
 
   .info {
@@ -166,13 +170,4 @@
   .slideGap1 img {
     margin-bottom: 3rem;
   }
-}
-
-/* Możesz dodać kolejne media queries dla jeszcze większych ekranów */
-@media (min-width: 992px) {
-  /* Stylowanie dla średnich ekranów */
-}
-
-@media (min-width: 1200px) {
-  /* Stylowanie dla dużych ekranów */
 }

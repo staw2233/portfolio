@@ -26,6 +26,9 @@ const Projects = () => {
 
   const handleSelectSlide = (slide) => {
     setSelectedSlide(slide);
+    if (slide !== "Portfolio") {
+      setSelectedSlide(slide);
+    }
   };
   const handleBackToProjects = () => {
     setSelectedSlide(null);
@@ -39,10 +42,12 @@ const Projects = () => {
         onClick={handleBackToProjects}
         dangerouslySetInnerHTML={{
           __html:
-            currentSlide === 3
+            currentSlide === 4
+              ? ""
+              : currentSlide === 3
               ? "There are no additional slides here if you want you can scroll higher and admire this portfolio yourself! : )"
               : selectedSlide
-              ? "Click here to return to other projects!"
+              ? "Click <b>here</b> to return to other projects! <i class='fas fa-arrow-left'></i>"
               : "Click the slide to see more informations!",
         }}
       ></div>
@@ -94,14 +99,15 @@ const Projects = () => {
                 <img src="../images/org1.jpg" alt="Project 3" />
                 <h3>"FilesOrganizer"</h3>
                 <p>
-                  This script allows you to sort files into folders
-                  corresponding to their extensions
+                  The File Organizer application, built using PyQt6, simplifies
+                  the task of organizing files within a directory. With a
+                  user-friendly interface, users can select a folder containing
+                  unsorted files, and the application automatically categorizes
+                  them based on file extensions into respective folders. A
+                  progress bar keeps users informed about the sorting progress.
                 </p>
               </div>
-              <div
-                className="slide"
-                onClick={() => handleSelectSlide("Portfolio")}
-              >
+              <div className="slide">
                 <img src="../images/port1.jpg" alt="Project 4" />
                 <h3>Portfolio</h3>
                 <p>
@@ -110,6 +116,19 @@ const Projects = () => {
                   with the help of React, it was created to attract the eye and,
                   at the same time, to show front-end skills and not only
                   back-end desktop applications.
+                </p>
+              </div>
+              <div className="slide">
+                <img src="../images/exp1.jpg" alt="Project 5" />
+                <h3>Expense Tracker</h3>
+                <p>
+                  Expense Tracker is a Python application designed to help users
+                  track their expenses efficiently. With its intuitive
+                  interface, users can easily input their expenses, categorize
+                  them, and monitor their spending habits over time. The
+                  application also provides visual representation in the form of
+                  pie charts, allowing users to gain insights into their
+                  expenditure patterns at a glance.
                 </p>
               </div>
             </Slider>
