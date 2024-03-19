@@ -87,9 +87,7 @@ const Projects = () => {
                   This application allows the user to automate reporting of
                   encountered defects that do not meet customer requirements. It
                   generates an "NG Report" (name dynamically changed based on
-                  the report creation date). This is up to 12h a week of time
-                  savings for the leaders and coordinator but also saves time
-                  for the operators.
+                  the report creation date).
                 </p>
               </div>
               <div
