@@ -61,7 +61,7 @@ const Projects = () => {
         >
           {selectedSlide === null ? (
             <Slider {...settings}>
-              <div
+              {/* <div
                 className="slide"
                 onClick={() => handleSelectSlide("gapownik")}
               >
@@ -76,8 +76,8 @@ const Projects = () => {
                   reports, which would be unattainable for a human in such a
                   short time, if at all.
                 </p>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="slide"
                 onClick={() => handleSelectSlide("raportowanie")}
               >
@@ -89,7 +89,7 @@ const Projects = () => {
                   generates an "NG Report" (name dynamically changed based on
                   the report creation date).
                 </p>
-              </div>
+              </div> */}
               <div
                 className="slide"
                 onClick={() => handleSelectSlide("organizer")}
