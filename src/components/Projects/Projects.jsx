@@ -109,11 +109,9 @@ const Projects = () => {
                 <img src="../images/port1.jpg" alt="Project 4" />
                 <h3>Portfolio</h3>
                 <p>
-                  Using the latest front-end technologies, I created a portfolio
-                  that many senior front-end developers could boast of. Created
-                  with the help of React, it was created to attract the eye and,
-                  at the same time, to show front-end skills and not only
-                  back-end desktop applications.
+                  Using React, I created a portfolio, it was created to attract
+                  the eye and, at the same time, to show front-end skills and
+                  not only back-end desktop applications.
                 </p>
               </div>
               <div className="slide">
