@@ -29,9 +29,8 @@ const RaportowanieCarousel = () => {
       <div className="slide rp2">
         <img src="../images/rap2.png" alt="" />
         <p>
-          The program first checks the OP number of the sample. Then, it adds
-          this OP number along with the sample name, photo, and selected type of
-          defect to our NG Report, as described above.
+          it adds the sample name, photo, and selected type of defect to our NG
+          Report, as described above.
         </p>
       </div>
       <div className="slide rp3">
@@ -56,11 +55,11 @@ const RaportowanieCarousel = () => {
         <img src="../images/rap5.png" alt="" />
         <p>
           The frame progress button creates for us an array with listed samples
-          from FS or RS. This allows us to monitor how the measurement of the
-          frame is going. The number of samples is large, so it can happen that
-          the operator makes a mistake (e.g. takes a photo, but does not take a
-          measurement), then our application informs us about it, as well as
-          informs us about samples which were NG and were taken to grinding.
+          . This allows us to monitor how the measurement of the frame is going.
+          The number of samples is large, so it can happen that the operator
+          makes a mistake (e.g. takes a photo, but does not take a measurement),
+          then our application informs us about it, as well as informs us about
+          samples which were had defect.
         </p>
       </div>
       <div className="slide rp6">

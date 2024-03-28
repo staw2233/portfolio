@@ -25,9 +25,8 @@ const GapownikCarosuel = () => {
       <div className="slideGap2">
         <img src="../images/gap2.png" alt="Project 2" />
         <p>
-          Gapownik knows perfectly well which samples we'll find, so it
-          dynamically assigns to each sample the gap value reached by the sample
-          from a given report (chronologically).
+          It dynamically assigns to each sample the gap value reached by the
+          sample from a given report (chronologically).
         </p>
       </div>
       <div className="slideGap3">
