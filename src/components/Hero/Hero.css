@@ -32,8 +32,8 @@ p {
 .hero-container::after,
 .hero-container::before {
   content: "";
-  width: 25.125rem;
-  height: 25.125rem;
+  width: 35.125rem;
+  height: 35.125rem;
   background-color: #b6c4b6;
   border-radius: 28.125rem;
   position: absolute;

@@ -1,12 +1,12 @@
 .skills-card {
-  border-radius: 0.65rem;
+  border-radius: 0.95rem;
   border: 1.5px solid #b6c4b6;
   padding: 2.5rem;
   text-align: center;
   background: #667c66;
   position: relative;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .skills-card img {
   width: 2.4rem;
@@ -25,7 +25,7 @@
 }
 
 .skills-card span {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #b6c4b6;
+  background: #bcbdbc;
   border-radius: 0.65rem;
   border: 1.5px solid #113a2a;
   position: absolute;
