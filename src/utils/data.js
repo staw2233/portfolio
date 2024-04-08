@@ -14,8 +14,8 @@ export const SKILLS = [
     icon: "/images/back.png",
     skills: [
       { skill: "Node.js", percentage: "50%" },
-      { skill: "MongoDB", percentage: "50%" },
       { skill: "Python", percentage: "60%" },
+      { skill: "PostgreSql", percentage: "50%" },
     ],
   },
   {
