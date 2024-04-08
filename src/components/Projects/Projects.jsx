@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Projects = () => {
   const [selectedSlide, setSelectedSlide] = useState(null);
-  const [currentSlide, setCurrentSlide] = useState(0); // nowy stan
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: true,
@@ -21,7 +21,7 @@ const Projects = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    afterChange: (current) => setCurrentSlide(current), // nowa funkcja
+    afterChange: (current) => setCurrentSlide(current),
   };
 
   const handleSelectSlide = (slide) => {
@@ -42,16 +42,13 @@ const Projects = () => {
         onClick={handleBackToProjects}
         dangerouslySetInnerHTML={{
           __html:
-            currentSlide === 4
-              ? ""
-              : currentSlide === 3
-              ? "There are no additional slides here if you want you can scroll higher and admire this portfolio yourself! : )"
+            currentSlide === 1 || currentSlide === 2 || currentSlide === 3
+              ? "There are no additional slides here!"
               : selectedSlide
               ? "Click <b>here</b> to return to other projects! <i class='fas fa-arrow-left'></i>"
               : "Click the slide to see more informations!",
         }}
       ></div>
-
       <div className="projects-content">
         <CSSTransition
           in={selectedSlide !== null}
@@ -61,11 +58,59 @@ const Projects = () => {
         >
           {selectedSlide === null ? (
             <Slider {...settings}>
+              <div className="slide">
+                <img src="../images/ada1.jpg" alt="Project 1" />
+                <h3>
+                  Artist Portfolio
+                  <br />
+                  <a href="https://ada-bak.pl"> Click here to visit</a>
+                </h3>
+                <p>
+                  I developed a portfolio website using React for an
+                  artist/actress. The website showcases her work, skills, and
+                  contact information. Here are some key features: <br />
+                  <b>Database Integration:</b> The portfolio website includes a
+                  backend connection to a database where the artist can manage
+                  and update appointment slots for clients to reserve. Visitors
+                  can explore the artist’s work and easily schedule appointments
+                  through the website <br />
+                  <b>Email Functionality: </b>
+                  Visitors can directly contact the artist through the website.
+                  I implemented an email feature that enables users to send
+                  messages without leaving the site. <br />
+                  <b>Responsive Design:</b> The website is fully responsive,
+                  ensuring a seamless experience across different devices and
+                  screen sizes. Feel free to explore the portfolio and get in
+                  touch with the artist!
+                </p>
+              </div>
+              <div className="slide">
+                <img src="../images/exp1.jpg" alt="Project 2" />
+                <h3>Expense Tracker</h3>
+                <p>
+                  Expense Tracker is a Python application designed to help users
+                  track their expenses efficiently. With its intuitive
+                  interface, users can easily input their expenses, categorize
+                  them, and monitor their spending habits over time. The
+                  application also provides visual representation in the form of
+                  pie charts, allowing users to gain insights into their
+                  expenditure patterns at a glance.
+                </p>
+              </div>
+              <div className="slide">
+                <img src="../images/port1.jpg" alt="Project 3" />
+                <h3>Portfolio</h3>
+                <p>
+                  Using React, I created a portfolio, it was created to attract
+                  the eye and, at the same time, to show front-end skills and
+                  not only back-end desktop applications.
+                </p>
+              </div>
               <div
                 className="slide"
                 onClick={() => handleSelectSlide("gapownik")}
               >
-                <img src="../images/gapownik.png" alt="Project 1" />
+                <img src="../images/gapownik.png" alt="Project 4" />
                 <h3>"Gapownik"</h3>
                 <p>
                   is a desktop application that allows users to create reports
@@ -81,7 +126,7 @@ const Projects = () => {
                 className="slide"
                 onClick={() => handleSelectSlide("raportowanie")}
               >
-                <img src="../images/raportowanie.png" alt="Project 2" />
+                <img src="../images/raportowanie.png" alt="Project 5" />
                 <h3>"Raportowanie Wad"</h3>
                 <p>
                   This application allows the user to automate reporting of
@@ -94,7 +139,7 @@ const Projects = () => {
                 className="slide"
                 onClick={() => handleSelectSlide("organizer")}
               >
-                <img src="../images/org1.jpg" alt="Project 3" />
+                <img src="../images/org1.jpg" alt="Project 6" />
                 <h3>"FilesOrganizer"</h3>
                 <p>
                   The File Organizer application, built using PyQt6, simplifies
@@ -103,28 +148,6 @@ const Projects = () => {
                   unsorted files, and the application automatically categorizes
                   them based on file extensions into respective folders. A
                   progress bar keeps users informed about the sorting progress.
-                </p>
-              </div>
-              <div className="slide">
-                <img src="../images/port1.jpg" alt="Project 4" />
-                <h3>Portfolio</h3>
-                <p>
-                  Using React, I created a portfolio, it was created to attract
-                  the eye and, at the same time, to show front-end skills and
-                  not only back-end desktop applications.
-                </p>
-              </div>
-              <div className="slide">
-                <img src="../images/exp1.jpg" alt="Project 5" />
-                <h3>Expense Tracker</h3>
-                <p>
-                  Expense Tracker is a Python application designed to help users
-                  track their expenses efficiently. With its intuitive
-                  interface, users can easily input their expenses, categorize
-                  them, and monitor their spending habits over time. The
-                  application also provides visual representation in the form of
-                  pie charts, allowing users to gain insights into their
-                  expenditure patterns at a glance.
                 </p>
               </div>
             </Slider>
