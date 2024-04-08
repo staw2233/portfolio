@@ -42,8 +42,8 @@ const Projects = () => {
         onClick={handleBackToProjects}
         dangerouslySetInnerHTML={{
           __html:
-            currentSlide === 1 || currentSlide === 2 || currentSlide === 3
-              ? "There are no additional slides here!"
+            currentSlide === 0 || currentSlide === 1 || currentSlide === 2
+              ? ""
               : selectedSlide
               ? "Click <b>here</b> to return to other projects! <i class='fas fa-arrow-left'></i>"
               : "Click the slide to see more informations!",
